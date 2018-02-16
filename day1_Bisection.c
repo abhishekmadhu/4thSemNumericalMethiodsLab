@@ -15,15 +15,14 @@ int main(){
     approx=0.000010;
     a=0.0;
     b=1.0;
-    
 
     printf("Enter the approximation range you wish to attain:\t");
     scanf("%f", &approx);
-    
 
     printf("Want to provide custom interval?(Y/N):\t");
     fflush(stdin);
     scanf("%c", &choice);
+
     if(choice=='Y' || choice=='y'){
     	printf("Enter the value of a and b separated by a space:\t");
     	fflush(stdin);
@@ -38,6 +37,7 @@ int main(){
         c=(a+b)/2;
         k=f(c);
         printf("c=%f\n", c);//
+
         if(k==0){
             ans=c;
             flag=1;
